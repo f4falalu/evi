@@ -10,23 +10,23 @@ import Logo from "./logos/Logo";
 
 export const Nav = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-
+  
   useLayoutEffect(() => {
     const el = document.documentElement;
-
+    
     if (el.classList.contains("dark")) {
       setIsDarkMode(true);
     } else {
       setIsDarkMode(false);
     }
   }, []);
-
+  
   const toggleDark = () => {
     const el = document.documentElement;
     el.classList.toggle("dark");
     setIsDarkMode((prev) => !prev);
   };
-
+  
   return (
     <div
       className={

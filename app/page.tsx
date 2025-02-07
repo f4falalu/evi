@@ -9,7 +9,7 @@ export default async function Page() {
   const accessToken = await getHumeAccessToken();
 
   if (!accessToken) {
-    throw new Error();
+    throw new Error("Access token is missing");
   }
 
   return (
