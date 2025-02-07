@@ -5,9 +5,9 @@ export type HumeLogoProps = SVGAttributes<SVGSVGElement>;
 
 export default function HumeLogo(props: HumeLogoProps) {
   const id = useId();
-
+  
   const gradientId = `hume-logo-gradient-${id}`;
-
+  
   return (
     <svg
       width="106"
